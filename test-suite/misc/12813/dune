@@ -1,0 +1,3 @@
+(coq.extraction
+        (prelude bug_12813.v)
+        (extracted_modules Bug))

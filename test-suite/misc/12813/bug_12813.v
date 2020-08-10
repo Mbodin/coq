@@ -17,4 +17,4 @@ From Coq Require Extraction.
 
 Extraction Language OCaml.
 
-Extraction "bug_12813" M.
+Extraction "Bug" M.

@@ -651,6 +651,9 @@ misc/universes.log: misc/universes/all_stdlib.v
 misc/universes/all_stdlib.v:
 	cd .. && $(MAKE) test-suite/$@
 
+misc/12813.log:
+	$(MAKE) -C .. test-suite/misc/12813/bug.exe
+
 $(patsubst %.sh,%.log,$(wildcard misc/*.sh)): %.log: %.sh $(PREREQUISITELOG)
 	@echo "TEST      $<"
 	$(HIDE){ \
