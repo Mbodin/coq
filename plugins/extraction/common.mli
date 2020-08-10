@@ -52,7 +52,7 @@ val get_phase : unit -> phase
 
 val opened_libraries : unit -> ModPath.t list
 
-type kind = Term | Type | Cons | Mod
+type kind = Term | Type | Cons | Proj | Mod
 
 val pp_global : kind -> GlobRef.t -> string
 val pp_module : ModPath.t -> string

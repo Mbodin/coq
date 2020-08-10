@@ -147,7 +147,7 @@ let get_ind = let open GlobRef in function
   | _ -> assert false
 
 let pp_one_field r i = function
-  | Some r -> pp_global Term r
+  | Some r -> pp_global Proj r
   | None -> pp_global Type (get_ind r) ++ str "__" ++ int i
 
 let pp_field r fields i = pp_one_field r i (List.nth fields i)
